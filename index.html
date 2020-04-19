@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
+    <link rel="icon" href="imgs/DMX Logo 2-03.svg" type="image/gif" ">
     <title>Document</title>
 </head>
 <style>
@@ -19,19 +20,47 @@
     *{
         font-family: Avenir;
     }
-    #bg{
-        background-image: url("imgs/productvideobackground.jpg");
-        background-position: center;
-        background-position: cover;
+    .box{
+        height: 280px;
     }
-    
+    .light{
+        background-color: #ecf0f1;
+    }
+    .one{
+        background-color: #172B4D;
+    }
+    .two{
+        background-color: #79F2C0;
+    }
+    .three{
+        background-color: #0052CC;
+    }
+    .four{
+        background-color: #FFC400;
+    }
+    .five{
+        background-color: #172B4D;
+    }
+    footer{
+        background-color: #172B4D;
+    }
+    .a{
+        color: black;
+    }
+    .img{
+        background: url(imgs/Logo.svg);
+        background-size: contain;
+        width: 195px;
+    }
+    .burger span{
+        background-color: black;
+    }
 </style>
 <body>
     
-    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-spaced light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <img src="imgs/DMX.png" width="112" height="28">
+          <a class="navbar-item img" href="/">
           </a>
       
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -43,16 +72,16 @@
       
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
-                <a href="whydeepinsight.html" class="navbar-item">
+                <a href="whydeepinsight.html" class="navbar-item a">
                     Why DeepInsight
                 </a>
-                <a href="learn.html" class="navbar-item">
+                <a href="learn.html" class="navbar-item a">
                     Learn
                 </a>
-                <a href="services.html" class="navbar-item">
+                <a href="services.html" class="navbar-item a">
                     Services
                 </a>
-                <a href="company" class="navbar-item">
+                <a href="company" class="navbar-item a">
                     Company
                 </a>
                 <div class="navbar-item">
@@ -64,64 +93,37 @@
                 </div>
             </div>
         </div>
-      </nav>
-
-    <section class="section">
-        <div class="container"><img src="imgs/HomepageTopband.jpg" alt=""></div>
-    </section>  
+    </nav>
     <section class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-8 is-variable is-vcentered">
                 <div class="column">
-                    <div style="height: 100%;" class="level">
-                        <p class="level-item">
-                            <div>
-                                <h1 class="title">Empower Your Business To Transform Data Into Powerful Insights</h1>
-                                <h2 class="subtitle">You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </h2>
-                            </div>
-                        </p>
-                    </div>
+                    <h1 class="title has-text-weight-bold">Empower Your Business To Transform Data Into Powerful Insights</h1>
+                    <h2 class="subtitle">You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </h2>
                 </div>
                 <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
             </div>
         </div>
     </section>
-
-
-      <section class="section">
+    <section class="section">
         <div class="container">
-            <h1 class="title has-text-centered has-text-weight-bold">
-                Monetize Your Data
-            </h1>
-            <figure class="image is-16by9">
-                <img src="imgs/MultipleDevices.jpg">
-            </figure>
-            <br>
-            <h2 class="subtitle has-text-centered">
-                DeepInsight is designed to help your company monetize data. With DeepInsight, you have a unified solution where you visualize, analyze, and gain meaningful insights about your business faster and more effectively and securely, on any device. It is a single platform that covers all your data needs from robust data discovery, data quality to powerful reporting with predictive analytics, personalized dashboards, secure and easy collaboration, applied machine learning and mobile BI.
-            </h2>
-        </div>
-      </section>
-
-      <section id="bg" class="section">
-        <div class="container">
-            <div class="columns is-mobile">
+            <div class="columns is-8 is-variable is-vcentered">
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
                 <div class="column">
-                    <div style="height: 100%;" class="level">
-                        <p class="level-item">
-                            <div>
-                                <h1 class="title">EMPOWER YOUR BUSINESS TO TRANSFORM DATA INTO POWERFUL INSIGHTS</h1>
-                                <h2 class="subtitle">You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </h2>
-                            </div>
-                        </p>
-                    </div>
+                    <h1 class="title has-text-weight-bold">
+                        Monetize Your Data
+                    </h1>
+                    <h2 class="subtitle">
+                        DeepInsight is designed to help your company monetize data. With DeepInsight, you have a unified solution where you visualize, analyze, and gain meaningful insights about your business faster and more effectively and securely, on any device. It is a single platform that covers all your data needs from robust data discovery, data quality to powerful reporting with predictive analytics, personalized dashboards, secure and easy collaboration, applied machine learning and mobile BI.
+                    </h2>
                 </div>
-                <div class="column"> <video autoplay loop muted playsinline src="imgs/coverr-sandboarding-in-desert-1585557594519.mp4" class="fillWidth"></video></div>
             </div>
         </div>
     </section>
 
-      <section class="section">
+
+
+      <section class="section light">
           <div class="container">
             <h1 class="title has-text-centered has-text-weight-bold">
                 Why Organizations Chose US?
@@ -129,33 +131,59 @@
             <div class="tile is-ancestor">
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="box"></div>
-                        <p class="content has-text-centered">One organization, one platform
-                        </p>
+                        <div class="box one has-text-white-bis">
+                            <figure class="image is-96x96">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                            <br>
+                            <p class="content">
+                                One organization, one platform
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child ">
+                        <div class="box two">
+                            <figure class="image is-96x96">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                            <br>
+                            <p class="content">Secure and Scalable </p>
+                        </div>
                     </div>
                 </div>
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="box"></div>
-                        <p class="content has-text-centered">Secure and Scalable </p>
+                        <div class="box three has-text-white-bis">
+                            <figure class="image is-96x96">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                            <br>
+                            <p class="content">Apply to any Business</p>
+                        </div>
                     </div>
                 </div>
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="box"></div>
-                        <p class="content has-text-centered">Apply to any Business</p>
+                        <div class="box four">
+                            <figure class="image is-96x96">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                            <br>
+                            <p class="content">Fast implementation</p>
+                        </div>   
                     </div>
                 </div>
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="box"></div>
-                        <p class="content has-text-centered">Fast implementation</p>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        <div class="box"></div>
-                        <p class="content has-text-centered">Strong Support team</p>
+                        <div class="box five has-text-white-bis">
+                            <figure class="image is-96x96">
+                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                            <br>
+                            <p class="content">Strong Support team</p>
+                        </div>
                     </div>
                 </div>
 
@@ -163,7 +191,7 @@
           </div>
       </section>
 
-      <footer class="footer">
+    <footer class="footer" style="background-color: #172B4D;">
 
         <div class="container">
             <div class="tile is-ancestor">
@@ -190,7 +218,7 @@
                     </div>
                 </div>
                 <div class="tile is-parent">
-                    <div class="tile is-child">
+                    <div class="tile is-child has-text-white-bis">
                         <p>Follow Us</p>
                         <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                         <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -200,13 +228,13 @@
                 </div>
             </div>    
         </div>
-        
-        <div class="content has-text-centered">
+        <br>
+        <div class="content has-text-centered has-text-white-bis">
           <p>
               Dimentrix Technologies Pvt Ltd 2007-2020
           </p>
         </div>
-      </footer>
+    </footer>
 
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
