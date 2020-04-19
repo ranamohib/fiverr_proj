@@ -3,56 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/DMX Logo 2-03.svg" type="image/gif">
     <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
     <title>Document</title>
 </head>
 <style>
+
+    @font-face {
+        font-family: Avenir;
+        src: url(fonts/AvenirNextLTPro-Regular.otf);
+    }
+    @font-face {
+        font-family: Avenir;
+        src: url(./fonts/AvenirNextLTPro-Bold.otf);
+        font-weight: bold;
+    }
     *{
-        font-family: 'Poppins', sans-serif;
+        font-family: Avenir;
     }
-    #services img{
-        transform: scale(0.5);
+    .light{
+        background-color: #ecf0f1;
     }
-    #pop{
-        width: 70%;
-        transform: translate(-50%);
-        position: absolute;
-        left: 50%;
-        top: 50%;
+    footer{
+        background-color: #172B4D;
     }
+    .a{
+        color: black;
+    }
+    .img{
+        background: url(imgs/Logo.svg);
+        background-size: contain;
+        width: 195px;
+    }
+    .burger span{
+        background-color: black;
+    }
+    .bg{
+        background-image: url(https://gradientjoy.com/500);
+        background-position: center;
+        background-size: cover;
+        height: 150px;
+    }
+    .b{
+        height: 550px;
+    }
+    .bo{
+        height: 500px;
+    }
+
 </style>
 <body>
-    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-spaced light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="imgs/DMX.png" width="112" height="28">
-            </a>
-    
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+          <a class="navbar-item img" href="/">
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-    
+      
         <div class="navbar-menu" id="navMenu">
-            <div class="navbar-end">
-                <a class="navbar-item">
+            <div class="navbar-start">
+                <a href="whydeepinsight.html" class="navbar-item a">
                     Why DeepInsight
                 </a>
-                <a class="navbar-item">
+                <a href="learn.html" class="navbar-item a">
                     Learn
                 </a>
-                <a class="navbar-item">
+                <a href="services.html" class="navbar-item a">
                     Services
                 </a>
-                <a class="navbar-item">
+                <a href="company" class="navbar-item a">
                     Company
                 </a>
+            </div>
+            <div class="navbar-end">
+
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-primary is-outlined">
                             <strong>Try Free</strong>
                         </a>
                     </div>
@@ -60,117 +92,153 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-medium is-light is-bold is-relative is-hidden-mobile">
-        <div class="hero-body">
-
-        </div>
-        <div id="pop" class="box has-text-centered">
-            <h1 class="title has-text-centered is-small">SOLUTION FOR ALL TYPE OF BUSINESSES</h1>
-            <h2 class="subtitle has-text-centered is-small">Dimentrix Technologies offers a wealth of technical expertise. We engineer and deliver diverse, complex, software, web, and mobile solutions for any business need. 
-            </h2>
-            <a href="#" class="button is-primary">Contact Us</a>
-        </div>
-    </section>
-
-    <section class="hero is-medium is-light is-bold is-hidden-tablet">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-                SOLUTION FOR ALL TYPE OF BUSINESSES
-            </h1>
-            <h2 class="subtitle">
-                Dimentrix Technologies offers a wealth of technical expertise. We engineer and deliver diverse, complex, software, web, and mobile solutions for any business need.
-            </h2>
-          </div>
-        </div>
-      </section>
     <section class="section">
-        <div class="container"></div>
+        <div class="container">
+            <div class="columns is-8 is-variable is-vcentered">
+                <div class="column">
+                    <h1 class="title has-text-weight-bold">Solution For All Type Of Businesses</h1>
+                    <h2 class="subtitle">You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </h2>
+                </div>
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            </div>
+        </div>
     </section>
+
 
     <section class="section">
         <div class="container">
-          <h1 class="title has-text-centered has-text-weight-bold">
-              Our Expertise
-          </h1>
-          <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                  <div class="tile is-child">
-                      <div class="box"></div>
-                      <p class="content has-text-centered">Product-Minded Leadership Team</p>
-                  </div>
-              </div>
-              <div class="tile is-parent">
-                  <div class="tile is-child">
-                      <div class="box"></div>
-                      <p class="content has-text-centered">A Product-Driven Team</p>
-                  </div>
-              </div>
-              <div class="tile is-parent">
-                  <div class="tile is-child">
-                      <div class="box"></div>
-                      <p class="content has-text-centered">Powerful Customer First Strategy
-                    </p>
-                  </div>
-              </div>
-              <div class="tile is-parent">
-                  <div class="tile is-child">
-                      <div class="box"></div>
-                      <p class="content has-text-centered">Innovation</p>
-                  </div>
-              </div>
-
-          </div>
+            <h1 class="title has-text-centered has-text-weight-bold">
+                Our Expertise
+            </h1>
+            <br>
+            <div class="columns is-8">
+                <div class="column">
+                    <div class="b">
+                        <figure class="image is-5by3">
+                            <img src="https://bulma.io/images/placeholders/256x256.png">
+            
+                        </figure>
+                        <br>
+                        <div class="content">
+                            <h1 class="title has-text-weight-bold">Product-Minded Leadership Team</h1>
+                            <p>We’ve built an organization entirely dedicated to delivering the best products! We have a strong, clearly communicated vision and focus on hiring people who value the product-first approach.</p>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <figure class="image is-5by3">
+                            <img src="https://bulma.io/images/placeholders/256x256.png">
+            
+                        </figure>
+                        <br>
+                        <div class="content">
+                            <h1 class="title has-text-weight-bold">Powerful Customer First Strategy</h1>
+                            <p>We take customer feedback very seriously and continuously evolve our offerings to match customer needs. Our customer-centric team develops features that address customer needs. Our core engineering team can be contacted over Skype, Phone, Email, Hangout and can tailor their support to customer needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="b">
+                        <figure class="image is-5by3">
+                            <img src="https://bulma.io/images/placeholders/256x256.png">
+            
+                        </figure>
+                        <br>
+                        <div class="content">
+                            <h1 class="title has-text-weight-bold">A Product-Driven Team</h1>
+                            <p> We have the confidence in what we’ve built, and we continuously work at identifying and maximizing new feature cycles while keeping innovation alive. Working with us is easy as our Ingenuity, resourcefulness, and problem-solving abilities inspire out-of-the-box thinking, new ideas, and the ability to visualize all the possible ways to achieve what our customers or product desire.</p>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <figure class="image is-5by3">
+                            <img src="https://bulma.io/images/placeholders/256x256.png">
+            
+                        </figure>
+                        <br>
+                        <div class="content">
+                            <h1 class="title has-text-weight-bold">Innovation</h1>
+                            <p>This is our core competency, and we have the courage to push innovative ideas to the forefront.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="services" class="section">
+    <img src="imgs/wave.svg" alt="" style="margin-bottom: -5px;">
+        <section id="services" class="section light">
         <div class="container">
             <h1 class="title has-text-centered has-text-weight-bold">
                 Our Services
             </h1>
-            <div class="tile is-ancestor">
-                <div class="tile is-vertical">
-                    <div class="tile is-parent">
-                        <div class="tile is-child">
-                            
-                            <div>
-                                <img src="imgs/undraw_code_review_l1q9.svg" alt="">
-                                <h1 class="title has-text-centered is-small">Software Development</h1>
-                                <h2 class="subtitle has-text-centered is-small">Well qualified engineers working on a wide variety of technology stacks, verticals, and business domains. 
-                                    Our result-driven software development services include a multitude of services, including custom Web development, Web & Big Data Architectures, Enterprise software development, Cloud-Enabled development, and Custom software development</h2>
-                            </div>
-                        </div>
-                        <div class="tile is-child">
-                            
-                            <div>
-                                <img src="imgs/undraw_android_jr64.svg" alt="">
-                                <h1 class="title has-text-centered is-small">Lorem ipsum dolor sit amet.</h1>
-                                <h2 class="subtitle has-text-centered is-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dicta ut, iste modi perspiciatis aliquid inventore.</h2>
-                            </div>
-                        </div>
-                        <div class="tile is-child">
-                            <div>
-                                <img src="imgs/undraw_mobile_testing_reah.svg" alt="">
-                                <h1 class="title has-text-centered is-small">Lorem ipsum dolor sit amet.</h1>
-                                <h2 class="subtitle has-text-centered is-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dicta ut, iste modi perspiciatis aliquid inventore.</h2>
-                            </div>
+            <br>
+            <div class="columns is-8">
+                <div class="column">
+                    <div class="bo">
+                        <figure class="image is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                        </figure>
+                        <br>
+                        <div class="content is-small">
+                            <h1 class="title">Software Development</h1>
+                            <p
+                                >Well qualified engineers working on a wide variety of technology stacks, verticals, and business domains. 
+                                Our result-driven software development services include a multitude of services, including custom Web development, Web & Big Data Architectures, Enterprise software development, Cloud-Enabled development, and Custom software development
+                            </p>
                         </div>
                     </div>
-                    <div class="tile is-parent">
-                        <div class="tile is-child">
-                            <div>
-                                <img src="imgs/undraw_File_bundle_xl7g.svg" alt="">
-                                <h1 class="title has-text-centered is-small">Lorem ipsum dolor sit amet.</h1>
-                                <h2 class="subtitle has-text-centered is-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dicta ut, iste modi perspiciatis aliquid inventore.</h2>
-                            </div>
+                    <div class="bo">
+                        <figure class="image is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                            
+                        </figure>
+                        <br>
+                        <div class="content is-small">
+                            <h1 class="title">Software Development</h1>
+                            <p
+                                >Well qualified engineers working on a wide variety of technology stacks, verticals, and business domains. 
+                                Our result-driven software development services include a multitude of services, including custom Web development, Web & Big Data Architectures, Enterprise software development, Cloud-Enabled development, and Custom software development
+                            </p>
                         </div>
-                        <div class="tile is-child">
-                            <div>
-                                <img src="imgs/data.svg" alt="">
-                                <h1 class="title has-text-centered is-small">Lorem ipsum dolor sit amet.</h1>
-                                <h2 class="subtitle has-text-centered is-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dicta ut, iste modi perspiciatis aliquid inventore.</h2>
-                            </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="bo">
+                        <figure class="image is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                            
+                        </figure>
+                        <br>
+                        <div class="content is-small">
+                            <h1 class="title">Software Development</h1>
+                            <p
+                                >Well qualified engineers working on a wide variety of technology stacks, verticals, and business domains. 
+                                Our result-driven software development services include a multitude of services, including custom Web development, Web & Big Data Architectures, Enterprise software development, Cloud-Enabled development, and Custom software development
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bo">
+                        <figure class="image is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                            
+                        </figure>
+                        <br>
+                        <div class="content is-small">
+                            <h1 class="title">Software Development</h1>
+                            <p
+                                >Well qualified engineers working on a wide variety of technology stacks, verticals, and business domains. 
+                                Our result-driven software development services include a multitude of services, including custom Web development, Web & Big Data Architectures, Enterprise software development, Cloud-Enabled development, and Custom software development
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="bo">
+                        <figure class="image is-128x128">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                            
+                        </figure>
+                        <br>
+                        <div class="content">
+                            
                         </div>
                     </div>
                 </div>
