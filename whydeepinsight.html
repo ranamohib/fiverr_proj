@@ -32,6 +32,13 @@
         padding-right: 2px;
         font-family: sans-serif;
     }
+    .a{
+        color: black;
+        
+    }
+    .light{
+        background-color: white;
+    }
     .left{
         border-right: 1px solid grey;
     }
@@ -45,24 +52,35 @@
         width: 195px;
     }
     a.navbar-item:hover{
-        color: #3F37DC;
+        background-color: #3F37DC;
     }
     a.button.is-primary{
-        background-color: #3F37DC;
-        
+        border-color: #3F37DC;
+        color: #3F37DC;
     }
     nav{
         box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
     }
 </style>
 <body>
-    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <nav class="navbar light" role="navigation" aria-label="main navigation">
        <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item img" href="/">
               
             </a>
-        
+            <a href="whydeepinsight.html" class="navbar-item a">
+                Why DeepInsight
+            </a>
+            <a href="learn.html" class="navbar-item a">
+                Learn
+            </a>
+            <a href="services.html" class="navbar-item a">
+                Services
+            </a>
+            <a href="company" class="navbar-item a">
+                Company
+            </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -72,22 +90,11 @@
         
           <div class="navbar-menu" id="navMenu">
               <div class="navbar-end">
-                  <a href="whydeepinsight.html" class="navbar-item">
-                      Why DeepInsight
-                  </a>
-                  <a href="learn.html" class="navbar-item">
-                      Learn
-                  </a>
-                  <a href="services.html" class="navbar-item">
-                      Services
-                  </a>
-                  <a href="company" class="navbar-item">
-                      Company
-                  </a>
+
                   <div class="navbar-item">
                       <div class="buttons">
-                          <a class="button is-primary is-small">
-                              Try Free
+                          <a class="button is-primary is-small is-outlined">
+                              Try it Free
                           </a>
                       </div>
                   </div>
