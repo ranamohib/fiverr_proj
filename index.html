@@ -20,122 +20,125 @@
     *{
         font-family: Avenir;
     }
-    .box{
-        height: 280px;
-    }
+
     .light{
         background-color: white;
     }
-    .one{
-        background-color: #172B4D;
-    }
-    .two{
-        background-color: #79F2C0;
-    }
-    .three{
-        background-color: #0052CC;
-    }
-    .four{
-        background-color: #FFC400;
-    }
-    .five{
-        background-color: #172B4D;
-    }
+
     footer{
         background-color: #172B4D;
     }
     .a{
-        color: black;
-        font-size: 18px;
-    }
-    a.navbar-item:hover{
         color: #3F37DC;
+        margin-left: 10px;
+        font-size: 16px;
+       
     }
-    .img{
+    .m-active{
+        border-bottom: 3px solid #3F37DC;
+    }
+   .a:hover{
         
-        background: url(imgs/Logo.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 300px;
-        height: 100px;
-        margin-top: -9px;
+        border-bottom: 3px solid #DFE1E5;
     }
+
     .burger span{
         background-color: black;
     }
-    a.button.is-primary{
-        background-color: #3F37DC;
-        
-    }
+
     .m-tabs{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 45px;
+        margin-bottom: 45px;
         width: 85%;
+        cursor: pointer;
     }
+    .main{
+        margin-top: 60px;
+    }
+
     .border{
         border-top: 2px solid #172B4D;
         padding: 0 20px;
+    }
+    .img{
+        background: url(imgs/Logo.svg);
+        background-size: contain;
+        width: 195px;
+        margin-top: -5px;
+    }
+    nav{
+        box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    }
+    a.navbar-item:hover{
+        color: #3F37DC;
+    }
+    a.button.is-primary{
+        background-color: #3F37DC;
     }
 </style>
 <body>
 
     <nav class="navbar light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item img" href="/">
-          </a>
-      
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="whydeepinsight.html" class="navbar-item a">
-                    Why DeepInsight
-                </a>
-                <a href="learn.html" class="navbar-item a">
-                    Learn
-                </a>
-                <a href="services.html" class="navbar-item a">
-                    Services
-                </a>
-                <a href="company" class="navbar-item a">
-                    Company
-                </a>
-            </div>
-            <div class="navbar-end">
-
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary is-small">
-                            Try Free
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <section class="section">
         <div class="container">
-            <div class="columns is-8 is-variable is-vcentered">
+         <div class="navbar-brand">
+             <a class="navbar-item img" href="/">
+               
+             </a>
+ 
+             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+             </a>
+           </div>
+         
+           <div class="navbar-menu" id="navMenu">
+             <div class="navbar-start">
+                 <a href="whydeepinsight.html" class="navbar-item a">
+                     Why DeepInsight
+                 </a>
+                 <a href="learn.html" class="navbar-item a">
+                     Learn
+                 </a>
+                 <a href="services.html" class="navbar-item a">
+                     Services
+                 </a>
+                 <a href="company" class="navbar-item a">
+                     Company
+                 </a>
+             </div>  
+             <div class="navbar-end">
+ 
+                   <div class="navbar-item">
+                       <div class="buttons">
+                           <a class="button is-small is-primary">
+                               Try it Free
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </nav>
+ 
+    <section class="section main">
+        <div class="container">
+            <div class="columns is-8 is-variable">
                 <div class="column">
                     <h1 class="title has-text-weight-bold">Empower Your Business To Transform Data Into Powerful Insights</h1>
                     <h2 class="subtitle">You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </h2>
                 </div>
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+                <div class="column"><img src="imgs/Home [Recovered]_Apply To Any Business.svg" alt="" class=""></div>
             </div>
         </div>
     </section>
     <section class="section">
         <div class="container">
-            <div class="columns is-8 is-variable is-vcentered">
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            <div class="columns is-8 is-variable">
+                <div class="column"><img src="imgs/Home [Recovered]_Monetize Your Data.svg" alt="" class=""></div>
                 <div class="column">
                     <h1 class="title has-text-weight-bold">
                         Monetize Your Data
@@ -175,7 +178,7 @@
                     <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
                     </div>
                 </div>
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+                <div class="column"><img src="imgs/Home [Recovered]_One Org. One Platform.svg" alt="" class=""></div>
             </div>
             <div id="linkTwo" class="columns is-8 is-variable is-hidden-desktop sec">
                 <div class="column">
@@ -184,7 +187,7 @@
                     <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
                     </div>
                 </div>
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+                <div class="column"><img src="imgs/Home [Recovered]_Secure And Scalable.svg" alt="" class=""></div>
             </div>
             <div id="linkThree" class="columns is-8 is-variable is-hidden-desktop sec">
                 <div class="column">
@@ -193,7 +196,7 @@
                     <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
                     </div>
                 </div>
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+                <div class="column"><img src="imgs/Home [Recovered]_Apply To Any Business.svg" alt="" class=""></div>
             </div>
             <div id="linkFour" class="columns is-8 is-variable is-hidden-desktop sec">
                 <div class="column">
@@ -202,7 +205,7 @@
                     <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
                     </div>
                 </div>
-                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+                <div class="column"><img src="imgs/Home [Recovered]_Fast Implementation.svg" alt="" class=""></div>
             </div>
             <div id="linkFive" class="columns is-8 is-variable is-hidden-desktop sec">
                 <div class="column">

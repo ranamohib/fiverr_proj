@@ -33,8 +33,15 @@
         font-family: sans-serif;
     }
     .a{
-        color: black;
+        color: #3F37DC;
+        margin-left: 10px;
+        font-size: 16px;
+       
+    }
+
+   .a:hover{
         
+        border-bottom: 3px solid #DFE1E5;
     }
     .light{
         background-color: white;
@@ -52,61 +59,63 @@
         width: 195px;
         margin-top: -5px;
     }
+
+    nav{
+        box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    }
+    nav .m-active{
+        border-bottom: 3px solid #3F37DC;
+    }
     a.navbar-item:hover{
         color: #3F37DC;
     }
-    a.button.is-outlined{
-        border-color: #3F37DC;
-        color: #3F37DC;
-    }
-    nav{
-        box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    a.button.is-primary{
+        background-color: #3F37DC;
     }
 </style>
 <body>
     <nav class="navbar light" role="navigation" aria-label="main navigation">
-       <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item img" href="/">
-              
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        
-          <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="whydeepinsight.html" class="navbar-item a">
-                    Why DeepInsight
-                </a>
-                <a href="learn.html" class="navbar-item a">
-                    Learn
-                </a>
-                <a href="services.html" class="navbar-item a">
-                    Services
-                </a>
-                <a href="company" class="navbar-item a">
-                    Company
-                </a>
-            </div>  
-            <div class="navbar-end">
-
-                  <div class="navbar-item">
-                      <div class="buttons">
-                          <a class="button is-small is-outlined">
-                              Try it Free
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-       </div>
-    </nav>
-
+        <div class="container">
+         <div class="navbar-brand">
+             <a class="navbar-item img" href="/">
+               
+             </a>
+ 
+             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+             </a>
+           </div>
+         
+           <div class="navbar-menu" id="navMenu">
+             <div class="navbar-start">
+                 <a href="whydeepinsight.html" class="navbar-item a m-active">
+                     Why DeepInsight
+                 </a>
+                 <a href="learn.html" class="navbar-item a">
+                     Learn
+                 </a>
+                 <a href="services.html" class="navbar-item a">
+                     Services
+                 </a>
+                 <a href="company" class="navbar-item a">
+                     Company
+                 </a>
+             </div>  
+             <div class="navbar-end">
+ 
+                   <div class="navbar-item">
+                       <div class="buttons">
+                           <a class="button is-small is-primary">
+                               Try it Free
+                           </a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </nav>
     <section class="section">
         <div class="container">
             <div class="columns">
