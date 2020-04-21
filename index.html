@@ -67,6 +67,18 @@
         background-color: #3F37DC;
         
     }
+    .m-tabs{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 85%;
+    }
+    .border{
+        border-top: 2px solid #172B4D;
+        padding: 0 20px;
+    }
 </style>
 <body>
 
@@ -136,74 +148,74 @@
         </div>
     </section>
 
+      
+      
 
-
-      <section class="section light">
-          <div class="container">
-            <h1 class="title has-text-centered has-text-weight-bold">
-                Why Organizations Chose US?
-            </h1>
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        <div class="box one has-text-white-bis">
-                            <figure class="image is-96x96">
-                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                            </figure>
-                            <br>
-                            <p class="content">
-                                One organization, one platform
-                            </p>
-                        </div>
+    <section class="section">
+        
+        <div class="container  border">
+        <h1 class="title has-text-weight-bold" style="margin-top: 100px;">
+            Why Organizations Chose US?
+        </h1>
+        <div>
+            <ul class="m-tabs is-hidden-touch">
+                <li class="m-link" data-target="linkOne"><span class="tag is-rounded is-info is-light is-medium">One organization, one platform</span></li>
+                <li class="m-link" data-target="linkTwo"><span>Secure and Scalable</span></li>
+                <li class="m-link" data-target="linkThree"><span>Apply to any Business</span></li>
+                <li class="m-link" data-target="linkFour"><span>Fast implementation</span></li>
+                <li class="m-link" data-target="linkFive"><span>Strong Support team</span></li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div id="linkOne" class="columns is-8 is-variable sec">
+                <div class="column">
+                    <div class="content">
+                    <h1 class="title has-text-weight-bold">One organization, one platform</h1>
+                    <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
                     </div>
                 </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child ">
-                        <div class="box two">
-                            <figure class="image is-96x96">
-                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                            </figure>
-                            <br>
-                            <p class="content">Secure and Scalable </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        <div class="box three has-text-white-bis">
-                            <figure class="image is-96x96">
-                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                            </figure>
-                            <br>
-                            <p class="content">Apply to any Business</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        <div class="box four">
-                            <figure class="image is-96x96">
-                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                            </figure>
-                            <br>
-                            <p class="content">Fast implementation</p>
-                        </div>   
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child">
-                        <div class="box five has-text-white-bis">
-                            <figure class="image is-96x96">
-                                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-                            </figure>
-                            <br>
-                            <p class="content">Strong Support team</p>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
             </div>
-          </div>
+            <div id="linkTwo" class="columns is-8 is-variable is-hidden-desktop sec">
+                <div class="column">
+                    <div class="content">
+                    <h1 class="title has-text-weight-bold">Secure and Scalable</h1>
+                    <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
+                    </div>
+                </div>
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            </div>
+            <div id="linkThree" class="columns is-8 is-variable is-hidden-desktop sec">
+                <div class="column">
+                    <div class="content">
+                    <h1 class="title has-text-weight-bold">Apply to any Business</h1>
+                    <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
+                    </div>
+                </div>
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            </div>
+            <div id="linkFour" class="columns is-8 is-variable is-hidden-desktop sec">
+                <div class="column">
+                    <div class="content">
+                    <h1 class="title has-text-weight-bold">Fast implementation</h1>
+                    <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
+                    </div>
+                </div>
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            </div>
+            <div id="linkFive" class="columns is-8 is-variable is-hidden-desktop sec">
+                <div class="column">
+                    <div class="content">
+                    <h1 class="title has-text-weight-bold">Strong Support team</h1>
+                    <p>You can use DeepInsight to create data visualizations exactly how you like. DeepInsight is a secured, Advanced Business Intelligence and Data Analytics platform that enables business users to gain insights and make data-focused decisions. </hp>
+                    </div>
+                </div>
+                <div class="column"><img src="imgs/data.svg" alt="" class=""></div>
+            </div>
+        </div>
+        
+        </div>
       </section>
 
     <footer class="footer" style="background-color: #172B4D;">
@@ -258,7 +270,8 @@
 
 // Get all "navbar-burger" elements
 const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
+const $mLinks = Array.prototype.slice.call(document.querySelectorAll('.m-link'), 0);
+const $sections = Array.prototype.slice.call(document.querySelectorAll('.sec'), 0);
 // Check if there are any navbar burgers
 if ($navbarBurgers.length > 0) {
 
@@ -275,6 +288,41 @@ if ($navbarBurgers.length > 0) {
 
     });
   });
+}
+
+if ($mLinks.length > 0) {
+
+// Add a click event on each of them
+$mLinks.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    // if(!$target.classList.contains("is-hidden-desktop")){
+    //     $target.classList.toggle('is-active');
+    // }
+
+    $sections.forEach( e => {
+        e.classList.add("is-hidden-desktop");
+    });
+    $mLinks.forEach( el => {
+        el.children[0].classList.remove('tag');
+        el.children[0].classList.remove('is-rounded');
+        el.children[0].classList.remove('is-info');
+        el.children[0].classList.remove('is-light');
+        el.children[0].classList.remove('is-medium');
+    });
+    el.children[0].classList.toggle('tag');
+    el.children[0].classList.toggle('is-rounded');
+    el.children[0].classList.toggle('is-info');
+    el.children[0].classList.toggle('is-light');
+    el.children[0].classList.toggle('is-medium');
+    $target.classList.toggle('is-hidden-desktop');
+
+  });
+});
 }
 
 });
