@@ -52,7 +52,8 @@
         align-items: baseline;
         margin-top: 45px;
         margin-bottom: 45px;
-        width: 85%;
+        width: 90%;
+        font-size: 20px;
         cursor: pointer;
     }
     .main{
@@ -78,8 +79,11 @@
     a.button.is-primary{
         background-color: #3F37DC;
     }
-    .tag:not(body).is-medium {
-        padding: 20px;
+    .tag:not(body).is-large {
+        padding: 10px 20px;
+    }
+    .dropdown{
+        margin: 45px 0;
     }
 </style>
 <body>
@@ -165,7 +169,7 @@
         </h1>
         <div>
             <ul class="m-tabs is-hidden-touch">
-                <li class="m-link" data-target="linkOne"><span class="tag is-rounded has-text-weight-bold is-info is-light is-medium">One organization, one platform</span></li>
+                <li class="m-link" data-target="linkOne"><span class="tag is-rounded has-text-weight-bold is-info is-light is-large">One organization, one platform</span></li>
                 <li class="m-link" data-target="linkTwo"><span >Secure and Scalable</span></li>
                 <li class="m-link" data-target="linkThree"><span>Apply to any Business</span></li>
                 <li class="m-link" data-target="linkFour"><span>Fast implementation</span></li>
@@ -173,6 +177,38 @@
             </ul>
         </div>
         
+
+        <div class="dropdown is-hidden-desktop">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>One organization, one platform</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a data-target="linkOne" class="dropdown-item is-active">
+                    One organization, one platform
+                </a>
+                <a data-target="linkTwo"class="dropdown-item">
+                    Secure and Scalable
+                </a>
+                <a data-target="linkThree" class="dropdown-item">
+                    Apply to any Business
+                </a>
+                <a data-target="linkFour" class="dropdown-item">
+                    Fast implementation
+                </a>
+                <hr class="dropdown-divider">
+                <a data-target="linkFive" class="dropdown-item">
+                    Strong Support team
+                </a>
+              </div>
+            </div>
+          </div>
+
         <div class="container">
             <div id="linkOne" class="columns is-8 is-variable sec">
                 <div class="column">
@@ -183,7 +219,7 @@
                 </div>
                 <div class="column"><img src="imgs/Home [Recovered]_One Org. One Platform.svg" alt="" class=""></div>
             </div>
-            <div id="linkTwo" class="columns is-8 is-variable is-hidden-desktop sec">
+            <div id="linkTwo" class="columns is-8 is-variable is-hidden sec">
                 <div class="column">
                     <div class="content">
                     <h1 class="title has-text-weight-bold">Secure and Scalable</h1>
@@ -192,7 +228,7 @@
                 </div>
                 <div class="column"><img src="imgs/Home [Recovered]_Secure And Scalable.svg" alt="" class=""></div>
             </div>
-            <div id="linkThree" class="columns is-8 is-variable is-hidden-desktop sec">
+            <div id="linkThree" class="columns is-8 is-variable is-hidden sec">
                 <div class="column">
                     <div class="content">
                     <h1 class="title has-text-weight-bold">Apply to any Business</h1>
@@ -201,7 +237,7 @@
                 </div>
                 <div class="column"><img src="imgs/Home [Recovered]_Apply To Any Business.svg" alt="" class=""></div>
             </div>
-            <div id="linkFour" class="columns is-8 is-variable is-hidden-desktop sec">
+            <div id="linkFour" class="columns is-8 is-variable is-hidden sec">
                 <div class="column">
                     <div class="content">
                     <h1 class="title has-text-weight-bold">Fast implementation</h1>
@@ -210,7 +246,7 @@
                 </div>
                 <div class="column"><img src="imgs/Home [Recovered]_Fast Implementation.svg" alt="" class=""></div>
             </div>
-            <div id="linkFive" class="columns is-8 is-variable is-hidden-desktop sec">
+            <div id="linkFive" class="columns is-8 is-variable is-hidden sec">
                 <div class="column">
                     <div class="content">
                     <h1 class="title has-text-weight-bold">Strong Support team</h1>
@@ -277,6 +313,8 @@
 // Get all "navbar-burger" elements
 const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 const $mLinks = Array.prototype.slice.call(document.querySelectorAll('.m-link'), 0);
+const $dropdown = Array.prototype.slice.call(document.querySelectorAll('.dropdown-item'), 0);
+const $dropbutton = Array.prototype.slice.call(document.querySelectorAll('.dropdown'), 0);
 const $sections = Array.prototype.slice.call(document.querySelectorAll('.sec'), 0);
 // Check if there are any navbar burgers
 if ($navbarBurgers.length > 0) {
@@ -294,6 +332,21 @@ if ($navbarBurgers.length > 0) {
 
     });
   });
+}
+if ($dropbutton.length > 0) {
+
+// Add a click event on each of them
+$dropbutton.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+
+
+  });
+});
 }
 
 if ($mLinks.length > 0) {
@@ -318,7 +371,7 @@ $mLinks.forEach( el => {
         el.children[0].classList.remove('is-rounded');
         el.children[0].classList.remove('is-info');
         el.children[0].classList.remove('is-light');
-        el.children[0].classList.remove('is-medium');
+        el.children[0].classList.remove('is-large');
         el.children[0].classList.remove('has-text-weight-bold');
         
     });
@@ -326,9 +379,34 @@ $mLinks.forEach( el => {
     el.children[0].classList.toggle('is-rounded');
     el.children[0].classList.toggle('is-info');
     el.children[0].classList.toggle('is-light');
-    el.children[0].classList.toggle('is-medium');
+    el.children[0].classList.toggle('is-large');
     el.children[0].classList.toggle('has-text-weight-bold');
-    $target.classList.toggle('is-hidden-desktop');
+    $target.classList.toggle('is-hidden');
+
+  });
+});
+}
+
+if ($dropdown.length > 0) {
+
+// Add a click event on each of them
+$dropdown.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    // if(!$target.classList.contains("is-hidden-desktop")){
+    //     $target.classList.toggle('is-active');
+    // }
+
+    $sections.forEach( e => {
+        e.classList.add("is-hidden");
+    });
+
+
+    $target.classList.toggle('is-hidden');
 
   });
 });
