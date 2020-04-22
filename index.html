@@ -165,7 +165,7 @@
         </h1>
         <div>
             <ul class="m-tabs is-hidden-touch">
-                <li class="m-link" data-target="linkOne"><span class="tag is-rounded is-info is-light is-medium">One organization, one platform</span></li>
+                <li class="m-link" data-target="linkOne"><span class="tag is-rounded has-text-weight-bold is-info is-light is-medium">One organization, one platform</span></li>
                 <li class="m-link" data-target="linkTwo"><span >Secure and Scalable</span></li>
                 <li class="m-link" data-target="linkThree"><span>Apply to any Business</span></li>
                 <li class="m-link" data-target="linkFour"><span>Fast implementation</span></li>
@@ -319,12 +319,15 @@ $mLinks.forEach( el => {
         el.children[0].classList.remove('is-info');
         el.children[0].classList.remove('is-light');
         el.children[0].classList.remove('is-medium');
+        el.children[0].classList.remove('has-text-weight-bold');
+        
     });
     el.children[0].classList.toggle('tag');
     el.children[0].classList.toggle('is-rounded');
     el.children[0].classList.toggle('is-info');
     el.children[0].classList.toggle('is-light');
     el.children[0].classList.toggle('is-medium');
+    el.children[0].classList.toggle('has-text-weight-bold');
     $target.classList.toggle('is-hidden-desktop');
 
   });
