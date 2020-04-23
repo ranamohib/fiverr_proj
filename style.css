@@ -181,13 +181,13 @@ nav{
 
 @media screen and (max-width: 600px) {
 
-    body{
+    html{
         overflow-y: hidden;
     }
     
     .s{
        padding-left: 8%; 
-       padding-right: 0%;
+       padding-right: 8%;
     } 
     .img{
         left: -45px;
