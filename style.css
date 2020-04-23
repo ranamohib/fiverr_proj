@@ -7,6 +7,13 @@
     src: url(./fonts/AvenirNextLTPro-Bold.otf);
     font-weight: bold;
 }
+@font-face {
+    font-family: Avenir;
+    src: url(./fonts/AvenirLTStd-Heavy.otf);
+    font-weight: 500;
+}
+
+
 
 *{
     font-family: Avenir;
@@ -29,7 +36,9 @@ footer{
    
 }
 
-
+.bottom{
+    padding-top: 0%;
+}
 
 .m-active{
     border-bottom: 3px solid #18164A;;
@@ -61,10 +70,6 @@ section.section.main{
     padding: 0px;
 }
 
-.border{
-    border-top: 2px solid #172B4D;
-    padding: 0 20px;
-}
 .img{
     background: url(imgs/Logo.svg);
     background-size: 100% 100%;
@@ -73,10 +78,18 @@ section.section.main{
     margin: auto;
 }
 nav{
-    height: 81px;
+    height: 58px;
     box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
 }
-
+.navbar-start a{
+    margin-top: 5px;
+    text-align: left;
+    font-size: 15.8px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #3D3B6C;
+    opacity: 1;
+}
  .s{
     padding-left: 10%; 
     padding-right: 10%;
@@ -98,43 +111,73 @@ nav{
 
 .st{
     text-align: left;
-    font-size: 16px;
-    font-weight: 510;
+    font-size: 14.8px;
+    font-weight: 500;
     letter-spacing: 0px;
     color: #3D3B6C;
     opacity: 1;
 }
 
+
+.shadow{
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+     }
 @media screen and (min-width: 1820px) {
     
  .s{
-    padding-left: -10%; 
-    padding-right: -10%;
+    padding-left: 0%; 
+    padding-right: 0%;
  } 
-
+ .img{
+     left: -50px;
+    background: url(imgs/Logo.svg);
+    background-size: 100% 100%;
+    width: 233.3px;
+    height: 52.31px;
+    margin: auto;
+}
+nav{
+    height: 81px;
+    width: 100%;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+}
 .navbar-start a{
+    left: -30px;
+    margin-top: 5px;
     text-align: left;
-    font:  20px;
+    font-size: 22.8px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #3D3B6C;
+    opacity: 1;
+}
+.t{
+    text-align: left;
+    width: 659px;
+    font-size: 44px;
+    letter-spacing: 0px;
+    color: #3D3B6C;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.st{
+    width: 659px;
+    text-align: left;
+    font-size: 22;
+    font-weight: 500;
     letter-spacing: 0px;
     color: #3D3B6C;
     opacity: 1;
 }
 
-a.navbar-item:hover{
-    color: #18164A;
-}
-a.button.is-primary{
-    background-color: #18164A;
-}
-.tag:not(body).is-medium {
-    padding: 20px;
-}
-.dropdown{
-    margin: 45px 0;
-}
-.title{
-    width: 799px;
-    font-size: 44px;
+
+.columns.is-variable.is-8 {
+    left: 10px;
+    right: 10px;  
+    width: 110%; 
 }
 
+
+ 
 }
