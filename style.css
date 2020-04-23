@@ -180,6 +180,10 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
+
+    body{
+        overflow: hidden;
+    }
     
     .s{
        padding-left: 8%; 
@@ -196,4 +200,6 @@ nav{
     .tt{
         margin-top: 50px;
     }
+
+    
 }
